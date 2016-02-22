@@ -2,7 +2,7 @@ var fs = require('fs');
 var coffee = require('coffee-script');
 
 module.exports = function myPlugin(lasso, config) {
-    lasso.dependencies.registerJavaScriptType(
+    lasso.dependencies.registerRequireType(
         'coffee',
         {
             // Declare which properties can be passed to the dependency type
