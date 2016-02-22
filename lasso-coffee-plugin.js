@@ -38,14 +38,12 @@ module.exports = function myPlugin(lasso, config) {
                 // NOTE: A stream can also be returned
             },
 
-            // getSourceFile is optional and is only used to determine the last modified time
+            // getLastModified is optional and is only used to determine the last modified time
             // stamp and to give the output file a reasonable name when bundling is disabled
-            getSourceFile: function() {
-                return this.path;
+            getLastModified: function(lassoContext, callback) {
+                // https://github.com/marko-js/marko/blob/ac13f51fc1c26a73a43c78d27d740d6134feece9/compiler/index.js#L127
+                callback(null, -1);
             }
         });
 
-    // lasso.dependencies.registerRequireExtension('coffee', function(path, context, callback) {
-    //     callback(null, 'module.exports=function(coffee) { return ' + coffee.compile(src) + '\n};');
-    // });
 };
