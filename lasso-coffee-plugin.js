@@ -30,20 +30,16 @@ module.exports = function myPlugin(lasso, config) {
                         return callback(err);
                     }
 
-                    var compiledCode = coffee.compile(src);
+                    var compiledCode = coffee.compile(src, {
+                        bare: true
+                    });
 
                     callback(null, compiledCode);
                 });
 
                 // NOTE: A stream can also be returned
-            },
-
-            // getLastModified is optional and is only used to determine the last modified time
-            // stamp and to give the output file a reasonable name when bundling is disabled
-            getLastModified: function(lassoContext, callback) {
-                // https://github.com/marko-js/marko/blob/ac13f51fc1c26a73a43c78d27d740d6134feece9/compiler/index.js#L127
-                callback(null, -1);
             }
+            
         });
 
 };
