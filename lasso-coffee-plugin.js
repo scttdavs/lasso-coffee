@@ -41,7 +41,7 @@ module.exports = function myPlugin(lasso, config) {
             },
 
             getLastModified: function(lassoContext, callback) {
-                callback(null, -1);
+                callback(null, -1); // for now to avoid conflicts with lasso
             }
 
         });
