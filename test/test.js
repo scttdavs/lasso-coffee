@@ -50,7 +50,7 @@ describe('lasso-coffee' , function() {
                 }
 
                 var output = fs.readFileSync(nodePath.join(__dirname, 'static/testPage.js'), {encoding: 'utf8'});
-                expect(output).to.equal('(function() {\n  var foo;\n\n  foo = \'bar\';\n\n}).call(this);\n');
+                expect(output).to.contain("var foo;");
                 done();
             });
     });
