@@ -38,8 +38,12 @@ module.exports = function myPlugin(lasso, config) {
                 });
 
                 // NOTE: A stream can also be returned
+            },
+
+            getLastModified: function(lassoContext, callback) {
+                callback(null, -1);
             }
-            
+
         });
 
 };
