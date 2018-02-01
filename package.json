@@ -19,10 +19,9 @@
     ],
     "maintainers": "Scott Davis <sc.ttdav.s@gmail.com>",
     "dependencies": {
-
+        "coffee-script": "^1.9.3"
     },
     "devDependencies": {
-        "coffee-script": "^1.9.3",
         "chai": "~1.8.1",
         "mocha": "~1.15.1",
         "lasso": "^1.8.4"
