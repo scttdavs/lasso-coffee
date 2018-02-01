@@ -1,7 +1,7 @@
 lasso-coffee
 ==============
 
-Lasso.js plugin to support compilation of [CoffeeScript](http://coffeescript.org/) dependencies. Note, this plugin will defer to your version of coffeescript, so you should make sure to include that in your app's `package.json`.
+Lasso.js plugin to support compilation of [CoffeeScript](http://coffeescript.org/) dependencies.
 
 # Installation
 
