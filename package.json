@@ -19,7 +19,7 @@
     ],
     "maintainers": "Scott Davis <sc.ttdav.s@gmail.com>",
     "dependencies": {
-        "coffee-script": "^1.9.3"
+        "coffeescript": "^2.2.2"
     },
     "devDependencies": {
         "chai": "~1.8.1",
