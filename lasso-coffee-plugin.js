@@ -1,5 +1,5 @@
 var fs = require('fs');
-var coffee = require('coffee-script');
+var coffee = require('coffeescript');
 
 module.exports = function myPlugin(lasso, config) {
     lasso.dependencies.registerRequireType(
